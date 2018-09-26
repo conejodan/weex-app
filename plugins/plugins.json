@@ -1,0 +1,13 @@
+{
+  "ios": [],
+  "web": [],
+  "android": [
+    {
+      "type": "maven",
+      "groupId": "com.instapp.nat",
+      "name": "weex-plugin-geolocation",
+      "version": "1.0.1",
+      "dependency": "com.instapp.nat:weex-plugin-geolocation:1.0.1"
+    }
+  ]
+}
