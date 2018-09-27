@@ -1,8 +1,8 @@
 {
-   "AppName":"WeexApp",
+    "AppName":"AncleWeex",
    "Version":"0.1",
    "BuildVersion":"0.1.0",
-   "AppId":"com.alibaba.weex",
+   "AppId":"com.klaineryn.ancleweex",
    "CodeSign":"",
    "Profile":"",
    "WeexBundle":"index.js"
