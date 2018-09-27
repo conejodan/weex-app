@@ -2,17 +2,27 @@
   <div class="wrapper">
     <image :src="logo" class="logo" />
     <text class="greeting">Esta chingon esto!</text>
+    <text class="greeting">{{geolo}}</text>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Nat from 'natjs'
+
 export default {
   name: 'App',
   data () {
     return {
+      geolo:"Primo Geo",
       logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
     }
+  },
+  mounted(){
+    console.log("Mounted");
+    setTimeout(()=>{
+      this.geolo = "Geolololo"
+    },3000);
   }
 }
 </script>
