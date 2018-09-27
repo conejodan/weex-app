@@ -6,8 +6,12 @@
                    right-text="more"
                    @wxcMinibarLeftButtonClicked="()=>{}"
                    @wxcMinibarRightButtonClicked="()=>{}">
-                   <wxc-icon slot="left" name='success'></wxc-icon>
-                   </wxc-minibar>
+                   <text slot="left" class='icon' style="font-size:50;color:white;" @click="buttonClicked">&#xf0c9;</text>
+    </wxc-minibar>
+<text style='font-family:iconfont4;font-size:100;color:green;margin-top:50px'>&#xe61e;&#xe600;&#xe62b;&#xe646;</text>
+<text style='font-family:iconfont3;font-size:100;color:green;margin-top:50px'>&#xf2b9;</text>
+<text style='font-family:iconfont2;font-size:100;color:green;margin-top:50px'>&#xf2b9;</text>
+                   
     <image :src="logo" class="logo" />
     <text class="greeting">Esta chingon esto!</text>
 
@@ -35,7 +39,6 @@
     import { WxcButton, WxcPopup, WxcMinibar, WxcIcon } from 'weex-ui';
 
     var modal = weex.requireModule('modal')
-    
 
 export default {
     name: 'App',
@@ -49,6 +52,30 @@ export default {
           logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
       }
     },
+    created(){
+
+      var domModule = weex.requireModule('dom');
+            
+      domModule.addRule('fontFace', {
+          'fontFamily': "awesomefont",
+          'src': "url('https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+      });
+
+      domModule.addRule('fontFace', {
+        'fontFamily': "iconfont2",
+        'src': "url('http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+      });
+
+      domModule.addRule('fontFace', {
+        'fontFamily': "iconfont3",
+        'src': "url('https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+      });
+
+      domModule.addRule('fontFace', {
+        'fontFamily': "iconfont4",
+        'src': "url('http://at.alicdn.com/t/font_zn5b3jswpofuhaor.ttf')"
+      });
+},
     methods: {
         getPosition() {
           console.log(Nat.geolocation)
@@ -92,6 +119,9 @@ export default {
 </script>
 
 <style scoped>
+.icon {
+    font-family: awesomefont;
+}
   .wrapper {
     
   }

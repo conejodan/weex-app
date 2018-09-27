@@ -1386,7 +1386,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-text.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-text.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-11930d9f"
@@ -1430,7 +1430,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-checkbox/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-checkbox/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-a98566e6"
@@ -1602,7 +1602,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-tag.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-tag.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-19b7ad98"
@@ -1631,6 +1631,7 @@ module.exports = __vue_exports__
 /* weex initialized here, please do not move this line */
 var router = __webpack_require__(16);
 var App = __webpack_require__(20);
+
 /* eslint-disable no-new */
 new Vue(Vue.util.extend({ el: '#root', router: router }, App));
 router.push('/');
@@ -4314,7 +4315,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/src/components/HelloWorld.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/src/components/HelloWorld.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -4368,7 +4369,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/src/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-2964abc9"
@@ -4390,6 +4391,9 @@ module.exports = __vue_exports__
 /***/ (function(module, exports) {
 
 module.exports = {
+  "icon": {
+    "fontFamily": "awesomefont"
+  },
   "logo": {
     "width": "424",
     "height": "200"
@@ -4459,6 +4463,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //
 //
 //
+//
+//
+//
+//
 
 
 var modal = weex.requireModule('modal');
@@ -4474,6 +4482,30 @@ exports.default = {
             watch_position: "",
             logo: 'https://gw.alicdn.com/tfs/TB1yopEdgoQMeJjy1XaXXcSsFXa-640-302.png'
         };
+    },
+    created: function created() {
+
+        var domModule = weex.requireModule('dom');
+
+        domModule.addRule('fontFace', {
+            'fontFamily': "awesomefont",
+            'src': "url('https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+        });
+
+        domModule.addRule('fontFace', {
+            'fontFamily': "iconfont2",
+            'src': "url('http://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+        });
+
+        domModule.addRule('fontFace', {
+            'fontFamily': "iconfont3",
+            'src': "url('https://cdn.bootcss.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf')"
+        });
+
+        domModule.addRule('fontFace', {
+            'fontFamily': "iconfont4",
+            'src': "url('http://at.alicdn.com/t/font_zn5b3jswpofuhaor.ttf')"
+        });
     },
 
     methods: {
@@ -8104,7 +8136,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-button/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-button/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-6273a8fc"
@@ -8362,7 +8394,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-cell/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-cell/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-eff0e228"
@@ -8940,7 +8972,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-checkbox-list/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-checkbox-list/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -9099,7 +9131,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-city/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-city/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-0f3de7b5"
@@ -9499,7 +9531,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-city/tab.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-city/tab.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-03878890"
@@ -9716,7 +9748,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-searchbar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-searchbar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-6447ff37"
@@ -10343,7 +10375,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-result/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-result/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-50c76027"
@@ -10677,7 +10709,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-indexlist/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-indexlist/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3aacf008"
@@ -11362,7 +11394,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-countdown/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-countdown/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e737f06"
@@ -11743,7 +11775,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-dialog/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-dialog/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-b50148dc"
@@ -12082,7 +12114,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-overlay/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-overlay/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-389bbc1c"
@@ -12381,7 +12413,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-ep-slider/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-ep-slider/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1cad4c0f"
@@ -12952,7 +12984,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-page/full-page.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-page/full-page.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1f0ca268"
@@ -13451,7 +13483,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-grid-select/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-grid-select/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e7db4ef"
@@ -13664,7 +13696,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-grid-select/option.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-grid-select/option.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8da092b0"
@@ -13966,7 +13998,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-icon/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-icon/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-37129143"
@@ -14191,7 +14223,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-lightbox/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-lightbox/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-5a41033f"
@@ -14350,7 +14382,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-mask/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-mask/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-419c27f6"
@@ -14796,7 +14828,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-loading/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-loading/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-7a7a2208"
@@ -15128,7 +15160,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-lottery-rain/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-lottery-rain/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-769f96a2"
@@ -15250,7 +15282,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-lottery-rain/rain-item.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-lottery-rain/rain-item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-588ffb08"
@@ -15716,7 +15748,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-minibar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-minibar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-112985b0"
@@ -16020,7 +16052,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-noticebar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-noticebar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-76883c07"
@@ -16385,7 +16417,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-page-calendar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-page-calendar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8ef13670"
@@ -17256,7 +17288,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-pan-item/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-pan-item/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -17444,7 +17476,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-part-loading/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-part-loading/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -17585,7 +17617,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-popover/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-popover/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1a7e9f9e"
@@ -18092,7 +18124,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-popup/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-popup/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-28869db8"
@@ -18450,7 +18482,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-progress/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-progress/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-33517677"
@@ -18636,7 +18668,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-radio/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-radio/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-62bfaa47"
@@ -18785,7 +18817,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-radio/item.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-radio/item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-620616a4"
@@ -19060,7 +19092,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-refresher/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-refresher/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-48062e54"
@@ -19489,7 +19521,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-7a28d4ec"
@@ -19780,7 +19812,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-link.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-link.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -19917,7 +19949,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-icon.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-rich-text/wxc-rich-text-icon.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-21697eeb"
@@ -20376,7 +20408,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-simple-flow/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-simple-flow/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-4fb15c75"
@@ -20780,7 +20812,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-slide-nav/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-slide-nav/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1aea71d3"
@@ -21122,7 +21154,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-slider-bar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-slider-bar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3517959e"
@@ -21855,7 +21887,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-special-rich-text/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-special-rich-text/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-3e39ed76"
@@ -22276,7 +22308,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-stepper/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-stepper/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-8a149d46"
@@ -22619,7 +22651,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-bar/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-bar/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-0d85b832"
@@ -23113,7 +23145,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-page/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-tab-page/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-1b95b591"
@@ -23661,7 +23693,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/home/daniel/Documentos/weex/weex-app/node_modules/weex-ui/packages/wxc-tag/index.vue"
+__vue_options__.__file = "/Users/danielsanchez/Documents/weex/weex-app/node_modules/weex-ui/packages/wxc-tag/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__._scopeId = "data-v-05972366"
@@ -23961,13 +23993,41 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "wxcMinibarLeftButtonClicked": function () {},
       "wxcMinibarRightButtonClicked": function () {}
     }
-  }, [_c('wxc-icon', {
+  }, [_c('text', {
+    staticClass: ["icon"],
+    staticStyle: {
+      fontSize: "50",
+      color: "white"
+    },
     attrs: {
-      "slot": "left",
-      "name": "success"
+      "slot": "left"
+    },
+    on: {
+      "click": _vm.buttonClicked
     },
     slot: "left"
-  })], 1), _c('image', {
+  }, [_vm._v("")])]), _c('text', {
+    staticStyle: {
+      fontFamily: "iconfont4",
+      fontSize: "100",
+      color: "green",
+      marginTop: "50px"
+    }
+  }, [_vm._v("")]), _c('text', {
+    staticStyle: {
+      fontFamily: "iconfont3",
+      fontSize: "100",
+      color: "green",
+      marginTop: "50px"
+    }
+  }, [_vm._v("")]), _c('text', {
+    staticStyle: {
+      fontFamily: "iconfont2",
+      fontSize: "100",
+      color: "green",
+      marginTop: "50px"
+    }
+  }, [_vm._v("")]), _c('image', {
     staticClass: ["logo"],
     attrs: {
       "src": _vm.logo
